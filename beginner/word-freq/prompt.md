@@ -41,5 +41,3 @@ This problem tests your ability to:
 - Implement basic sorting
 - Handle input/output
 - Apply simple algorithms
-
-Would you like to attempt this problem? I can provide hints or guidance as needed.

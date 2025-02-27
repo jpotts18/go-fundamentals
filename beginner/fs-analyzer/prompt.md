@@ -38,5 +38,3 @@ This problem tests your ability to:
 - Handle file operations
 - Process collections of data
 - Format output appropriately
-
-Would you like to attempt this problem, or would you prefer something different?
