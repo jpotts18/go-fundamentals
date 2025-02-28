@@ -22,8 +22,8 @@ The quick brown fox jumps over the lazy dog. The dog barks, but the fox keeps ru
 
 ```
 the: 3
-fox: 2
 dog: 2
+fox: 2
 brown: 1
 but: 1
 jumps: 1
