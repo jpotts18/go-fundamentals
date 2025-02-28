@@ -1,5 +1,3 @@
-Here's a different beginner-friendly Golang problem:
-
 # Problem: HTTP Server Status Monitor
 
 **Task**: Create a Go program that periodically checks if specified websites are online and reports their status.

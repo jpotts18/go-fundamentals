@@ -1,5 +1,3 @@
-Certainly, here's another beginner-friendly Golang problem:
-
 # Problem: Simple File Directory Analyzer
 
 **Task**: Create a Go program that analyzes a given directory and provides statistics about the files it contains.

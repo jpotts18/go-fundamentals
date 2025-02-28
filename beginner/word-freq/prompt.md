@@ -1,5 +1,3 @@
-I'll provide you with a beginner-friendly Golang problem that tests fundamental programming concepts without being overwhelming.
-
 # Problem: Word Frequency Counter
 
 **Task**: Write a program in Go that reads text from standard input and counts the frequency of each word, then prints the words and their counts in descending order of frequency.
