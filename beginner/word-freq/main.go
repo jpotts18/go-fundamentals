@@ -9,10 +9,14 @@ import (
 
 
 func cleanSentence (in string) string {
-	lower_sentence := strings.ToLower(in)
-	reg, _ := regexp.Compile("[^a-z ]+")
-	cleaned_sentence := reg.ReplaceAllString(lower_sentence,"")
-	return cleaned_sentence
+	lowerSentence := strings.ToLower(in)
+	reg, err := regexp.Compile("[^a-z ]+")
+	if err != nil {
+		fmt.Println("Error compiling regex:", err)
+		return ""
+	}
+	cleanedSentence := reg.ReplaceAllString(lowerSentence,"")
+	return cleanedSentence
 }
 
 func main () {
@@ -21,11 +25,8 @@ func main () {
 	cleaned := cleanSentence(sentence)
 	words := strings.Split(cleaned, " ")
 	for _, word := range words {
-		_, ok := store[word]
-		if ok {
-			store[word] = store[word] + 1
-		} else {
-			store[word] = 1
+		if word != "" {
+		store[word]++
 		}
 	}
 	type kv struct {
@@ -38,6 +39,9 @@ func main () {
 		pairs = append(pairs, kv{k, v})
 	}
 	sort.Slice(pairs,func(i, j int) bool {
+		if pairs[i].Value == pairs[j].Value {
+			return pairs[i].Key < pairs[j].Key
+		}
 		return pairs[i].Value > pairs[j].Value 
 	})
 
